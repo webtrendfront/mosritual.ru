@@ -1,0 +1,1106 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&subset=latin,cyrillic);
+@font-face {
+  font-family: 'Conv_PT Sans Narrow Bold';
+  src: url("../fonts/PT Sans Narrow Bold.eot");
+  src: local("☺"), url("../fonts/PT Sans Narrow Bold.woff") format("woff"), url("../fonts/PT Sans Narrow Bold.ttf") format("truetype"), url("../fonts/PT Sans Narrow Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Conv_OldStandard-Italic';
+  src: url("../fonts/OldStandard-Italic.eot");
+  src: local("☺"), url("../fonts/OldStandard-Italic.woff") format("woff"), url("../fonts/OldStandard-Italic.ttf") format("truetype"), url("../fonts/OldStandard-Italic.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 30, /JOBS/Mosritual/src/css/styles.scss */
+* {
+  outline: 0; }
+
+/* line 34, /JOBS/Mosritual/src/css/styles.scss */
+html, body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/* line 41, /JOBS/Mosritual/src/css/styles.scss */
+ul.menu {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  /* line 46, /JOBS/Mosritual/src/css/styles.scss */
+  ul.menu li {
+    display: inline-block; }
+
+/* line 50, /JOBS/Mosritual/src/css/styles.scss */
+a {
+  color: #491323;
+  text-decoration: underline;
+  transition: all 0.3s; }
+  /* line 54, /JOBS/Mosritual/src/css/styles.scss */
+  a:hover {
+    color: #a91b27;
+    text-decoration: none; }
+
+/* line 59, /JOBS/Mosritual/src/css/styles.scss */
+form {
+  display: inline-block; }
+
+/* line 63, /JOBS/Mosritual/src/css/styles.scss */
+.btn.red {
+  padding: 10px 20px;
+  background-color: #562c35;
+  background-image: linear-gradient(to top, #562c35 0%, #731c1c 100%);
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s; }
+  /* line 76, /JOBS/Mosritual/src/css/styles.scss */
+  .btn.red:hover {
+    background: none;
+    background-color: #a91b27;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); }
+
+/* line 83, /JOBS/Mosritual/src/css/styles.scss */
+.btn.border {
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid #999595;
+  border-radius: 5px;
+  color: #999595;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  text-decoration: none;
+  transition: all 0.3s; }
+  /* line 94, /JOBS/Mosritual/src/css/styles.scss */
+  .btn.border:hover {
+    border: 2px solid #491323;
+    color: #491323; }
+
+/* line 101, /JOBS/Mosritual/src/css/styles.scss */
+.title_big {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  color: #491323; }
+
+/* line 111, /JOBS/Mosritual/src/css/styles.scss */
+header nav.top {
+  display: inline-block;
+  width: 100%;
+  background-color: #999595;
+  color: #ffffff; }
+  /* line 118, /JOBS/Mosritual/src/css/styles.scss */
+  header nav.top .menu li a {
+    display: inline-block;
+    margin-left: -4px;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none; }
+    /* line 126, /JOBS/Mosritual/src/css/styles.scss */
+    header nav.top .menu li a:hover {
+      background-color: #847e7e; }
+  /* line 130, /JOBS/Mosritual/src/css/styles.scss */
+  header nav.top .menu li:nth-last-child(2) {
+    margin-left: 40px; }
+  /* line 133, /JOBS/Mosritual/src/css/styles.scss */
+  header nav.top .menu li:nth-last-child(1) {
+    margin-left: 50px;
+    margin-right: 10px; }
+    /* line 136, /JOBS/Mosritual/src/css/styles.scss */
+    header nav.top .menu li:nth-last-child(1) a {
+      color: #562c35;
+      padding-left: 30px;
+      background-image: url(../images/cabinet-icon.png);
+      background-position: center left;
+      background-size: 16px 18px;
+      background-repeat: no-repeat; }
+      /* line 143, /JOBS/Mosritual/src/css/styles.scss */
+      header nav.top .menu li:nth-last-child(1) a:hover {
+        background-color: #999595;
+        color: #ffffff;
+        background-image: url(../images/cabinet-icon-a.png); }
+  /* line 152, /JOBS/Mosritual/src/css/styles.scss */
+  header nav.top form {
+    float: right;
+    padding: 5px 0;
+    position: relative; }
+    /* line 156, /JOBS/Mosritual/src/css/styles.scss */
+    header nav.top form input {
+      padding: 5px 20px 5px 35px;
+      font-size: 13px;
+      font-weight: 400;
+      color: #ffffff;
+      height: 30px;
+      border: 0;
+      border-radius: 5px;
+      background-color: #847e7e;
+      transition: all 0.3s; }
+      /* line 166, /JOBS/Mosritual/src/css/styles.scss */
+      header nav.top form input::-webkit-input-placeholder {
+        color: #ffffff; }
+      /* line 169, /JOBS/Mosritual/src/css/styles.scss */
+      header nav.top form input:focus {
+        color: #999595;
+        background-color: #ffffff; }
+    /* line 174, /JOBS/Mosritual/src/css/styles.scss */
+    header nav.top form button {
+      position: absolute;
+      top: 7px;
+      left: 3px;
+      text-indent: -9999px;
+      width: 25px;
+      height: 25px;
+      border: 0;
+      background: none;
+      background-image: url(../images/search-icon.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all 0.3s; }
+    /* line 188, /JOBS/Mosritual/src/css/styles.scss */
+    header nav.top form button.active {
+      background-image: url(../images/search-icon-a.png); }
+
+/* line 193, /JOBS/Mosritual/src/css/styles.scss */
+header .content {
+  height: 96px; }
+  /* line 195, /JOBS/Mosritual/src/css/styles.scss */
+  header .content .left {
+    padding-left: 0;
+    padding-right: 0; }
+  /* line 199, /JOBS/Mosritual/src/css/styles.scss */
+  header .content a.logotype {
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    width: 225px;
+    height: 56px;
+    text-indent: -99999px;
+    background-image: url(../images/logotype.png);
+    background-repeat: no-repeat; }
+  /* line 209, /JOBS/Mosritual/src/css/styles.scss */
+  header .content .name {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 26px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px; }
+  /* line 217, /JOBS/Mosritual/src/css/styles.scss */
+  header .content .phones {
+    display: inline-block;
+    margin-left: 32px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #999595; }
+    /* line 224, /JOBS/Mosritual/src/css/styles.scss */
+    header .content .phones a {
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 25px;
+      color: #000000;
+      text-decoration: none; }
+      /* line 230, /JOBS/Mosritual/src/css/styles.scss */
+      header .content .phones a:hover {
+        color: #562c35; }
+  /* line 235, /JOBS/Mosritual/src/css/styles.scss */
+  header .content .callbacks {
+    display: inline-block;
+    margin-left: 10px; }
+    /* line 238, /JOBS/Mosritual/src/css/styles.scss */
+    header .content .callbacks a {
+      color: #562c35;
+      border-bottom: 1px dotted #562c35;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 26px; }
+      /* line 245, /JOBS/Mosritual/src/css/styles.scss */
+      header .content .callbacks a:hover {
+        border-color: #a91b27;
+        color: #a91b27; }
+  /* line 251, /JOBS/Mosritual/src/css/styles.scss */
+  header .content .cart {
+    display: inline-block;
+    margin-left: 20px;
+    padding-left: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #999595;
+    border-left: 1px solid #ebebeb;
+    background-image: url(../images/cart-icon.png);
+    background-repeat: no-repeat;
+    background-position: 30px center; }
+    /* line 266, /JOBS/Mosritual/src/css/styles.scss */
+    header .content .cart a {
+      color: #562c35;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 22px;
+      text-decoration: underline; }
+      /* line 272, /JOBS/Mosritual/src/css/styles.scss */
+      header .content .cart a:hover {
+        text-decoration: none;
+        color: #a91b27; }
+    /* line 277, /JOBS/Mosritual/src/css/styles.scss */
+    header .content .cart::after {
+      position: absolute;
+      right: 0;
+      top: 25px;
+      content: '';
+      display: inline-block;
+      width: 48px;
+      height: 56px;
+      background-image: url(../images/gerb.png);
+      background-repeat: no-repeat; }
+
+/* line 290, /JOBS/Mosritual/src/css/styles.scss */
+header .main {
+  background-color: #491323; }
+  /* line 292, /JOBS/Mosritual/src/css/styles.scss */
+  header .main .menu {
+    width: 100%; }
+    /* line 294, /JOBS/Mosritual/src/css/styles.scss */
+    header .main .menu li {
+      text-align: center;
+      vertical-align: middle;
+      width: 12.53%;
+      margin-right: -4px; }
+      /* line 299, /JOBS/Mosritual/src/css/styles.scss */
+      header .main .menu li a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        padding: 12px 10px 10px;
+        text-transform: uppercase;
+        color: #ffffff;
+        letter-spacing: .1em;
+        font-family: "Conv_PT Sans Narrow Bold";
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px; }
+        /* line 312, /JOBS/Mosritual/src/css/styles.scss */
+        header .main .menu li a.active, header .main .menu li a:hover {
+          background-color: #a91b27; }
+      /* line 317, /JOBS/Mosritual/src/css/styles.scss */
+      header .main .menu li:nth-child(1) a {
+        padding: 21px 0 21px; }
+
+/* line 327, /JOBS/Mosritual/src/css/styles.scss */
+section.slider ul {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  /* line 332, /JOBS/Mosritual/src/css/styles.scss */
+  section.slider ul li {
+    display: block;
+    width: 100%;
+    height: 300px; }
+    /* line 336, /JOBS/Mosritual/src/css/styles.scss */
+    section.slider ul li h2 {
+      font-family: 'Conv_OldStandard-Italic';
+      margin-top: 100px;
+      font-size: 50px;
+      font-style: italic;
+      line-height: 50px;
+      color: #ffffff; }
+
+/* line 346, /JOBS/Mosritual/src/css/styles.scss */
+section.slider .owl-controls {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px; }
+  /* line 352, /JOBS/Mosritual/src/css/styles.scss */
+  section.slider .owl-controls .owl-pagination .owl-page {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7); }
+    /* line 359, /JOBS/Mosritual/src/css/styles.scss */
+    section.slider .owl-controls .owl-pagination .owl-page.active {
+      background-color: #562c35; }
+  /* line 364, /JOBS/Mosritual/src/css/styles.scss */
+  section.slider .owl-controls .owl-buttons {
+    bottom: 20px;
+    width: 100%; }
+    /* line 368, /JOBS/Mosritual/src/css/styles.scss */
+    section.slider .owl-controls .owl-buttons .owl-prev, section.slider .owl-controls .owl-buttons .owl-next {
+      display: inline-block;
+      text-indent: -9999px;
+      position: relative; }
+      /* line 372, /JOBS/Mosritual/src/css/styles.scss */
+      section.slider .owl-controls .owl-buttons .owl-prev::after, section.slider .owl-controls .owl-buttons .owl-next::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: -25px;
+        width: 30px;
+        height: 30px;
+        background-image: url(../images/slider_arrow.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 2; }
+    /* line 386, /JOBS/Mosritual/src/css/styles.scss */
+    section.slider .owl-controls .owl-buttons .owl-prev::after {
+      left: -60px; }
+    /* line 391, /JOBS/Mosritual/src/css/styles.scss */
+    section.slider .owl-controls .owl-buttons .owl-next::after {
+      right: -60px;
+      transform: scaleX(-1); }
+
+/* line 400, /JOBS/Mosritual/src/css/styles.scss */
+section.main_services {
+  margin: 30px 0 0; }
+  /* line 402, /JOBS/Mosritual/src/css/styles.scss */
+  section.main_services .service_item {
+    padding: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 23.07%;
+    text-align: center; }
+    /* line 408, /JOBS/Mosritual/src/css/styles.scss */
+    section.main_services .service_item .photo {
+      display: block;
+      overflow: hidden;
+      height: 195px;
+      border-radius: 15px;
+      -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
+      /* line 414, /JOBS/Mosritual/src/css/styles.scss */
+      section.main_services .service_item .photo img {
+        height: 100%;
+        min-width: 100%;
+        transition: transform 0.3s; }
+        /* line 418, /JOBS/Mosritual/src/css/styles.scss */
+        section.main_services .service_item .photo img:hover {
+          transform: scale(1.1);
+          -webkit-transform: scale(1.1); }
+    /* line 425, /JOBS/Mosritual/src/css/styles.scss */
+    section.main_services .service_item a.btn {
+      margin-top: 10px;
+      display: block;
+      height: 40px;
+      border-top: 1px solid #fff;
+      background-image: linear-gradient(to top, #aaa9a9 -1%, whitesmoke 100%);
+      border-radius: 5px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+      text-shadow: 0 1px 0 rgba(248, 249, 251, 0.5);
+      color: #4c4c4c;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s; }
+      /* line 441, /JOBS/Mosritual/src/css/styles.scss */
+      section.main_services .service_item a.btn:hover {
+        background: none;
+        background-color: #a91b27;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+        color: #FFFFFF; }
+  /* line 450, /JOBS/Mosritual/src/css/styles.scss */
+  section.main_services .service_item:nth-child(4), section.main_services .service_item:nth-child(8) {
+    margin-right: 0; }
+
+/* line 456, /JOBS/Mosritual/src/css/styles.scss */
+section.content h1 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #491323; }
+
+/* line 463, /JOBS/Mosritual/src/css/styles.scss */
+section.content p {
+  margin: 30px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; }
+
+/* line 469, /JOBS/Mosritual/src/css/styles.scss */
+section.content .block_news {
+  padding: 0; }
+  /* line 471, /JOBS/Mosritual/src/css/styles.scss */
+  section.content .block_news h3 {
+    position: relative;
+    color: #999595;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px; }
+    /* line 479, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news h3::after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 35px;
+      width: 43px;
+      height: 2px;
+      background-color: #999595; }
+  /* line 490, /JOBS/Mosritual/src/css/styles.scss */
+  section.content .block_news .news_item {
+    margin-bottom: 30px; }
+  /* line 493, /JOBS/Mosritual/src/css/styles.scss */
+  section.content .block_news .photo {
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70px;
+    height: 70px; }
+    /* line 500, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news .photo img {
+      margin: auto; }
+  /* line 504, /JOBS/Mosritual/src/css/styles.scss */
+  section.content .block_news .texts {
+    display: inline-block;
+    width: 73%;
+    margin-left: 30px; }
+    /* line 508, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news .texts span {
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px; }
+    /* line 514, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news .texts .date {
+      color: #999595; }
+    /* line 517, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news .texts a.title {
+      display: block;
+      color: #491323;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 22px;
+      text-decoration: underline;
+      text-transform: uppercase; }
+      /* line 525, /JOBS/Mosritual/src/css/styles.scss */
+      section.content .block_news .texts a.title:hover {
+        color: #a91b27; }
+    /* line 529, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news .texts .description {
+      color: #000000; }
+  /* line 533, /JOBS/Mosritual/src/css/styles.scss */
+  section.content .block_news .more {
+    margin-left: 100px;
+    color: #491323;
+    text-decoration: underline; }
+    /* line 537, /JOBS/Mosritual/src/css/styles.scss */
+    section.content .block_news .more:hover {
+      text-decoration: none;
+      color: #a91b27; }
+
+/* line 545, /JOBS/Mosritual/src/css/styles.scss */
+section.banners {
+  margin: 50px 0; }
+  /* line 547, /JOBS/Mosritual/src/css/styles.scss */
+  section.banners .banner_item {
+    padding: 0;
+    width: 31.6%; }
+    /* line 550, /JOBS/Mosritual/src/css/styles.scss */
+    section.banners .banner_item:nth-child(2) {
+      margin: 0 30px; }
+    /* line 553, /JOBS/Mosritual/src/css/styles.scss */
+    section.banners .banner_item .photo {
+      display: block;
+      overflow: hidden;
+      height: 220px;
+      position: relative;
+      transition: all 0.3s; }
+      /* line 559, /JOBS/Mosritual/src/css/styles.scss */
+      section.banners .banner_item .photo img {
+        transition: all 0.3s; }
+      /* line 563, /JOBS/Mosritual/src/css/styles.scss */
+      section.banners .banner_item .photo:hover img {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1); }
+    /* line 569, /JOBS/Mosritual/src/css/styles.scss */
+    section.banners .banner_item .photo.video::after {
+      content: '';
+      display: block;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-image: url(../images/video-bg.png);
+      background-position: center; }
+    /* line 583, /JOBS/Mosritual/src/css/styles.scss */
+    section.banners .banner_item .title {
+      display: block;
+      margin-top: 10px;
+      font-size: 17px;
+      font-weight: 600;
+      line-height: 36px;
+      text-transform: uppercase; }
+
+/* line 595, /JOBS/Mosritual/src/css/styles.scss */
+footer {
+  padding: 20px 0;
+  background-color: #999595;
+  color: #dfdfdf;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; }
+  /* line 602, /JOBS/Mosritual/src/css/styles.scss */
+  footer a {
+    color: #ffffff;
+    font-weight: 600; }
+  /* line 607, /JOBS/Mosritual/src/css/styles.scss */
+  footer .copyrights {
+    padding-left: 0; }
+    /* line 609, /JOBS/Mosritual/src/css/styles.scss */
+    footer .copyrights a {
+      display: inline-block;
+      margin-top: 30px; }
+  /* line 615, /JOBS/Mosritual/src/css/styles.scss */
+  footer .contacts a.phone {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px; }
+  /* line 621, /JOBS/Mosritual/src/css/styles.scss */
+  footer .contacts br {
+    line-height: 15px; }
+  /* line 624, /JOBS/Mosritual/src/css/styles.scss */
+  footer .contacts a.popup {
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px dotted #ffffff; }
+    /* line 628, /JOBS/Mosritual/src/css/styles.scss */
+    footer .contacts a.popup:hover {
+      border-bottom: 1px dotted #a91b27; }
+  /* line 633, /JOBS/Mosritual/src/css/styles.scss */
+  footer .social {
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    width: 37px;
+    line-height: 34px;
+    border-radius: 50%;
+    border: 2px solid #ffffff; }
+    /* line 642, /JOBS/Mosritual/src/css/styles.scss */
+    footer .social:hover {
+      border: 2px solid #a91b27; }
+  /* line 646, /JOBS/Mosritual/src/css/styles.scss */
+  footer .authors {
+    margin-top: 30px; }
+
+/* line 652, /JOBS/Mosritual/src/css/styles.scss */
+.second_content h1 {
+  color: #491323;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 30px; }
+
+/* line 661, /JOBS/Mosritual/src/css/styles.scss */
+.second_content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 41px;
+  text-transform: uppercase;
+  color: #491323; }
+
+/* line 669, /JOBS/Mosritual/src/css/styles.scss */
+.second_content.page h1 {
+  margin-bottom: 20px; }
+
+/* line 675, /JOBS/Mosritual/src/css/styles.scss */
+.second_content.filter h1 {
+  margin-top: 20px; }
+
+/* line 678, /JOBS/Mosritual/src/css/styles.scss */
+.second_content.filter ul.category {
+  margin: 20px 0 10px; }
+  /* line 680, /JOBS/Mosritual/src/css/styles.scss */
+  .second_content.filter ul.category a {
+    display: inline-block;
+    padding: 6px 10px 5px;
+    border: 1px solid #999595;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px; }
+    /* line 691, /JOBS/Mosritual/src/css/styles.scss */
+    .second_content.filter ul.category a:hover, .second_content.filter ul.category a.active {
+      background-color: #491323;
+      color: #ffffff;
+      border-color: #491323; }
+
+/* line 698, /JOBS/Mosritual/src/css/styles.scss */
+.second_content.filter hr {
+  margin: 0; }
+
+/* line 704, /JOBS/Mosritual/src/css/styles.scss */
+.catalog_list {
+  margin: 30px 0; }
+  /* line 706, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_list .catalog_list_item {
+    position: relative;
+    padding: 0;
+    height: 174px;
+    overflow: hidden;
+    margin-bottom: 30px; }
+    /* line 713, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_list .catalog_list_item.big {
+      height: 378px; }
+    /* line 717, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_list .catalog_list_item:hover .photo img {
+      transform: scale(1.1, 1.1); }
+    /* line 720, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_list .catalog_list_item:hover .title {
+      background-color: rgba(85, 44, 53, 0.8); }
+    /* line 725, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_list .catalog_list_item .photo img {
+      transition: all 0.3s;
+      width: 100%; }
+    /* line 730, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_list .catalog_list_item .title {
+      position: absolute;
+      background-color: rgba(153, 149, 149, 0.8);
+      text-align: center;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: #ffffff;
+      transition: all 0.3s; }
+
+/* line 749, /JOBS/Mosritual/src/css/styles.scss */
+.catalog_products .pagination {
+  padding: 20px 0;
+  display: block;
+  margin: 0px auto;
+  text-align: center; }
+  /* line 754, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_products .pagination a {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #999595;
+    text-decoration: none; }
+    /* line 762, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_products .pagination a:hover, .catalog_products .pagination a.active {
+      color: #491323; }
+
+/* line 769, /JOBS/Mosritual/src/css/styles.scss */
+.catalog_products .filter label {
+  margin-top: 30px; }
+
+/* line 773, /JOBS/Mosritual/src/css/styles.scss */
+.catalog_products .product {
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  height: 380px; }
+  /* line 778, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_products .product:hover {
+    border-radius: 5px;
+    border: 2px solid #491323; }
+    /* line 781, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_products .product:hover .catalog_products_item .photo img {
+      transform: scale(1.1, 1.1); }
+    /* line 784, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_products .product:hover .podrobnee {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-left: -2px;
+      margin-right: -2px;
+      border-left: 2px solid #491323;
+      border-right: 2px solid #491323;
+      border-bottom: 2px solid #491323;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 0 15px 15px 15px;
+      background-color: #ffffff;
+      z-index: 1; }
+      /* line 799, /JOBS/Mosritual/src/css/styles.scss */
+      .catalog_products .product:hover .podrobnee p {
+        display: block; }
+
+/* line 805, /JOBS/Mosritual/src/css/styles.scss */
+.catalog_products .catalog_products_item {
+  overflow: hidden; }
+  /* line 808, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_products .catalog_products_item .photo {
+    height: 270px;
+    overflow: hidden; }
+    /* line 811, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_products .catalog_products_item .photo img {
+      height: 270px;
+      transition: all 0.3s;
+      width: 100%; }
+  /* line 817, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_products .catalog_products_item .view {
+    margin: 10px 0; }
+    /* line 819, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_products .catalog_products_item .view .name {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 25px;
+      text-transform: uppercase; }
+    /* line 825, /JOBS/Mosritual/src/css/styles.scss */
+    .catalog_products .catalog_products_item .view .price {
+      float: right;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 25px; }
+  /* line 834, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_products .catalog_products_item .podrobnee p {
+    display: none;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; }
+  /* line 840, /JOBS/Mosritual/src/css/styles.scss */
+  .catalog_products .catalog_products_item .podrobnee a {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: underline; }
+
+/* line 852, /JOBS/Mosritual/src/css/styles.scss */
+.tovar {
+  margin-top: 20px; }
+  /* line 854, /JOBS/Mosritual/src/css/styles.scss */
+  .tovar .photo {
+    padding: 30px;
+    background-color: #eaeaea;
+    text-align: center;
+    overflow: hidden; }
+    /* line 859, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .photo img {
+      max-width: 100%; }
+  /* line 863, /JOBS/Mosritual/src/css/styles.scss */
+  .tovar h1 {
+    margin: 0; }
+  /* line 866, /JOBS/Mosritual/src/css/styles.scss */
+  .tovar .title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #999595; }
+  /* line 873, /JOBS/Mosritual/src/css/styles.scss */
+  .tovar hr {
+    margin: 0; }
+  /* line 876, /JOBS/Mosritual/src/css/styles.scss */
+  .tovar .small_title {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    padding-bottom: 10px; }
+  /* line 883, /JOBS/Mosritual/src/css/styles.scss */
+  .tovar .harakteristiki {
+    margin-top: 20px;
+    /* Transition */ }
+    /* line 885, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .col-sm-5, .tovar .harakteristiki .col-sm-7 {
+      padding: 5px 15px; }
+    /* line 888, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .col-sm-5 {
+      line-height: 40px; }
+    /* line 891, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .price {
+      margin-top: 20px; }
+      /* line 893, /JOBS/Mosritual/src/css/styles.scss */
+      .tovar .harakteristiki .price span {
+        display: inline-block;
+        float: left;
+        margin-top: -5px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 22px; }
+        /* line 900, /JOBS/Mosritual/src/css/styles.scss */
+        .tovar .harakteristiki .price span small {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 22px; }
+      /* line 906, /JOBS/Mosritual/src/css/styles.scss */
+      .tovar .harakteristiki .price a {
+        float: right;
+        margin-left: 20px; }
+    /* line 911, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      border: 0 !important;
+      background: #ffffff;
+      background-image: none; }
+    /* line 922, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .select {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 35px;
+      background: #ffffff;
+      overflow: hidden;
+      border-radius: .25em;
+      border: 1px solid #999595;
+      padding-left: 10px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px; }
+    /* line 936, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki select {
+      width: 200px;
+      height: 100%;
+      margin: 0;
+      padding: 0 0 0 0.1em;
+      cursor: pointer; }
+    /* line 943, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki select::-ms-expand {
+      display: none; }
+    /* line 946, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .select::after {
+      content: '\25BC';
+      position: absolute;
+      top: 8px;
+      right: 0;
+      bottom: 0;
+      padding: 0 1em;
+      background-color: #ffffff;
+      pointer-events: none;
+      color: #999595;
+      font-size: 8px; }
+    /* line 959, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .select:hover::after {
+      color: #999595; }
+    /* line 962, /JOBS/Mosritual/src/css/styles.scss */
+    .tovar .harakteristiki .select::after {
+      -webkit-transition: .25s all ease;
+      -o-transition: .25s all ease;
+      transition: .25s all ease; }
+
+/* line 973, /JOBS/Mosritual/src/css/styles.scss */
+.consultation {
+  margin-top: 10px;
+  padding: 30px 0;
+  background-color: #f7f7f7; }
+  /* line 977, /JOBS/Mosritual/src/css/styles.scss */
+  .consultation h3 {
+    color: #491323;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0; }
+
+/* line 989, /JOBS/Mosritual/src/css/styles.scss */
+form.form, .filter {
+  /* Transition */ }
+  /* line 990, /JOBS/Mosritual/src/css/styles.scss */
+  form.form .select_title, .filter .select_title {
+    display: inline-block;
+    width: 200px;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #999595;
+    text-align: left;
+    margin-bottom: 5px; }
+  /* line 1000, /JOBS/Mosritual/src/css/styles.scss */
+  form.form select, .filter select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #ffffff;
+    background-image: none; }
+  /* line 1011, /JOBS/Mosritual/src/css/styles.scss */
+  form.form .select, .filter .select {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: .25em;
+    border: 1px solid #491323;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px; }
+  /* line 1025, /JOBS/Mosritual/src/css/styles.scss */
+  form.form select, .filter select {
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 0.5em;
+    cursor: pointer; }
+  /* line 1032, /JOBS/Mosritual/src/css/styles.scss */
+  form.form select::-ms-expand, .filter select::-ms-expand {
+    display: none; }
+  /* line 1035, /JOBS/Mosritual/src/css/styles.scss */
+  form.form .select::after, .filter .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background-color: #ffffff;
+    pointer-events: none;
+    color: #491323;
+    font-size: 8px; }
+  /* line 1048, /JOBS/Mosritual/src/css/styles.scss */
+  form.form .select:hover::after, .filter .select:hover::after {
+    color: #491323; }
+  /* line 1051, /JOBS/Mosritual/src/css/styles.scss */
+  form.form .select::after, .filter .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease; }
+  /* line 1056, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type="text"], .filter input[type="text"] {
+    background-color: #ffffff;
+    border: 1px solid #491323;
+    border-radius: 3px;
+    padding: 10px;
+    border-radius: 0;
+    margin: 30px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    transition: all 0.3s; }
+    /* line 1070, /JOBS/Mosritual/src/css/styles.scss */
+    form.form input[type="text"]:focus, .filter input[type="text"]:focus {
+      border: 1px solid #562c35;
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(86, 44, 53, 0.2); }
+  /* line 1076, /JOBS/Mosritual/src/css/styles.scss */
+  form.form button, .filter button {
+    background-color: #562c35;
+    background-image: linear-gradient(to top, #562c35 0%, #731c1c 100%);
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 0;
+    padding: 10px 20px;
+    transition: background 0.3s; }
+    /* line 1089, /JOBS/Mosritual/src/css/styles.scss */
+    form.form button:hover, .filter button:hover {
+      background: none;
+      background-color: #a91b27;
+      transition: all 0.3s; }
+  /* line 1095, /JOBS/Mosritual/src/css/styles.scss */
+  form.form label, .filter label {
+    margin-left: 10px;
+    margin-right: 70px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px; }
+  /* line 1102, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=checkbox], form.form input[type=radio], .filter input[type=checkbox], .filter input[type=radio] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #491323;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 20px;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0 !important;
+    text-align: center;
+    vertical-align: middle;
+    width: 20px;
+    min-width: 20px;
+    transition: all 0.3s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  /* line 1124, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=radio], .filter input[type=radio] {
+    border-radius: 50%; }
+  /* line 1127, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=checkbox]:checked, form.form input[type=radio]:checked, .filter input[type=checkbox]:checked, .filter input[type=radio]:checked {
+    border-color: #491323;
+    background-color: #491323;
+    transition: all 0.3s ease-in-out; }
+  /* line 1132, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=checkbox]:before, form.form input[type=radio]:before, .filter input[type=checkbox]:before, .filter input[type=radio]:before {
+    opacity: 0;
+    transition: all 0.3s ease-in-out; }
+  /* line 1136, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=checkbox]:checked:before, form.form input[type=radio]:checked:before, .filter input[type=checkbox]:checked:before, .filter input[type=radio]:checked:before {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    speak: none;
+    opacity: 1;
+    transition: all 0.3s ease-in-out; }
+  /* line 1146, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=checkbox]:checked:before, .filter input[type=checkbox]:checked:before {
+    color: #ffffff;
+    font-size: 15px;
+    font-family: FontAwesome;
+    content: "\f00c";
+    margin: 9px 0 0 1px; }
+  /* line 1154, /JOBS/Mosritual/src/css/styles.scss */
+  form.form input[type=radio]:checked:before, .filter input[type=radio]:checked:before {
+    content: '';
+    background-color: #1e8cbe;
+    width: 10px;
+    height: 10px;
+    min-height: 10px;
+    margin: 3px 0 0 3px;
+    border-radius: 50%; }
+
+/*# sourceMappingURL=styles.css.map */
